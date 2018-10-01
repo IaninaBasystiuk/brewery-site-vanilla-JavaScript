@@ -1,0 +1,809 @@
+
+
+
+html{
+    background-image: url('../img/white_wood.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:  fixed;
+
+}
+
+/*body contenue*/
+
+body{
+
+    background: rgba(225,225,225,0.5);
+    font-family: 'Cinzel', serif;
+
+}
+
+
+
+/*menu secondaire*/
+.secondary_menu{
+
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+
+
+.spacing{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.fa{
+
+    color: dimgray;
+}
+
+.link_black{
+    text-decoration: none;
+    color: dimgray;
+    font-weight: 700;
+}
+
+.inputstyle{
+
+    border: 1px solid dimgray;
+    border-radius: 10px;
+
+        }
+.btnstyle {
+    background-color: white;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+
+        }
+
+/*menu principal*/
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5em;
+    margin-top: 2em;
+
+}
+
+.mainMenu{
+
+    font-size: 1.3em;
+
+}
+
+.logomy{
+
+    width: 12%;
+    position: absolute;
+    left: 3%;
+    top: 2%;
+
+
+}
+
+ /*first page*/
+.photo_box{
+    margin-top: 17%;
+    margin-bottom: 17%;
+    height: 600px;
+    background-color: #3b8051;
+    display: flex;
+
+}
+
+
+.container_photos{
+  position: relative;  
+  flex: 2; /*flex-grow: 2 parties de container*/
+
+
+}
+
+.buttons{
+
+    flex: 1;
+    display: flex;
+    flex-direction:  column; 
+    justify-content: center;
+    align-items: center;
+    color: red;
+    text-align: center;
+
+}
+
+.contentbtn{
+
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+}
+
+.cardbtn{
+    border: 1px solid dimgray;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 1px;
+    text-decoration: none;
+    color: dimgray;
+    font-weight: 400;
+    
+}
+.action0, .action1,.action2,.action3,.action4,.action5{
+    
+ color: forestgreen;
+}
+
+h5,h4, h2{ 
+    color: white;
+}
+
+h3{
+
+    color: dimgray;
+}
+
+
+.over{
+
+     position: absolute;
+     left: 55%;
+     top: 60%;
+     z-index: 1;
+     width: 15%;
+     height: auto;
+
+}
+
+.under{
+   position: absolute;
+   left: 30%;
+   bottom: 23%;
+   width: 30%;
+   height: auto;
+
+
+
+
+}
+
+
+
+/*deuxieme page avec les biers*/
+
+
+#pageTwo{
+
+    display: none;
+
+}
+
+.cardDescription > p{
+    font-weight: 400;
+    color: dimgray;
+    font-family: 'Lato', sans-serif;
+}
+
+img { 
+
+    width: 100%;
+
+
+
+}
+article{
+
+    width: 20%;
+    margin: 3%;
+}
+
+.imageDetails{
+    
+    flex-grow: 2;
+    margin-left: 1em;
+}
+
+div.recherche {
+    font-weight: 600;
+    color: dimgray;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+}
+
+.rech{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+
+p>button{
+    font-family: 'Cinzel', serif;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 1px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    
+}
+
+.animation{
+
+    transition: 1.3s ;
+
+}
+
+.animation:hover{
+
+    transform: scale(1.05,1.05);            
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.cards {
+
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+
+
+
+}
+
+.card{
+
+    padding: .3em;
+}
+
+
+.description{
+
+    padding: .3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+
+/*THINK ABOUT FLEXBOX AND ELEMENTS HERE!!!!!!*/
+.one{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+a.imageDescription {
+     width: 100%;
+    
+}
+.cardDescription {
+    
+    flex-grow: 1;
+    margin: 1em;
+    
+}
+
+
+/*footer*/
+
+.footer_row{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.containers_footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+}
+
+.containers_inside{
+   display:  flex;
+   flex-direction: column;
+   align-items: start;
+
+}
+
+
+
+.link_white{
+   text-decoration: none;
+   color: white;
+}
+
+
+footer{
+
+    background-color: #3b8051; 
+
+    margin-top: 2em;
+    padding-bottom: 2em;
+
+        }
+
+.social{
+
+    border-top: 1px solid white;
+    margin-top: 2em;
+
+        }
+
+.container_social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: .3em;
+}
+
+.fa-3x{
+
+    color: white;
+}
+
+
+/*MEDIA QUERIES*/
+/*mobile styles*/
+@media  only screen 
+and (max-width: 667px)
+ 
+  
+{  
+    img.logomy{
+        width: 100%;
+        z-index: -1;
+        opacity:0.2;
+    
+    }
+    .secondary_menu{
+        display: none;
+    
+    }
+    
+    .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin-bottom: 5em;
+    
+    
+}
+
+.mainMenu{
+    
+    font-size: 1em;
+        
+}
+    a.mainMenu{
+        width: 100%;
+    
+    }
+    
+    #pageOne{
+        display: none;
+    
+    }
+    
+    #pageTwo{
+        display: block;
+    
+    }
+    
+    article{
+
+        width: 90%;
+        margin: 3%;
+    }
+    
+    .footer_row{
+        display: none;
+    
+    }
+
+ }    
+
+/*tablet styles*/
+@media  only screen 
+and (min-width: 667px)
+and (max-width: 1024px)
+{  
+    img.logomy{
+        width: 100%;
+        z-index: -1;
+        opacity:0.2;
+    
+    }
+    .secondary_menu{
+        display: none;
+    
+    }
+    
+    .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin-bottom: 5em;
+    margin-top: .3em;
+    
+    
+    }
+
+    .mainMenu{
+    
+    font-size: 1em;
+        
+    }
+    a.mainMenu{
+        width: 100%;
+    
+    }
+    
+    #pageOne{
+        display: none;
+    
+    }
+    
+    #pageTwo{
+        display: block;
+    
+    }
+    
+   .description{
+
+    padding: .3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    }
+    
+    .cardbtn{
+    border: 1px solid dimgray;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 1px;
+    text-decoration: none;
+    color: dimgray;
+    font-weight: 400;
+    justify-content: center;/*change here to make more approprite view*/
+    
+    }
+    article{
+
+        width: 30%;
+        margin: 3%;
+    }
+    
+    .footer_row{
+        display: none;
+    
+    }
+/*desktop styles*/    
+@media  only screen 
+and (min-width: 1024px)
+{
+        
+html{
+    background-image: url('../img/white_wood.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:  fixed;
+
+}
+
+/*body contenue*/
+
+body{
+
+    background: rgba(225,225,225,0.5);
+    font-family: 'Cinzel', serif;
+
+}
+
+
+
+/*menu secondaire*/
+.secondary_menu{
+
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+
+
+.spacing{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.fa{
+
+    color: dimgray;
+}
+
+.link_black{
+    text-decoration: none;
+    color: dimgray;
+    font-weight: 700;
+}
+
+.inputstyle{
+
+    border: 1px solid dimgray;
+    border-radius: 10px;
+
+        }
+.btnstyle {
+    background-color: white;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+
+        }
+    
+ 
+
+/*menu principal*/
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5em;
+    margin-top: 2em;
+
+}
+
+.mainMenu{
+
+    font-size: 1.3em;
+
+}
+
+.logomy{
+
+    width: 12%;
+    position: absolute;
+    left: 3%;
+    top: 2%;
+
+
+}
+
+ /*first page*/
+.photo_box{
+    margin-top: 17%;
+    margin-bottom: 17%;
+    height: 600px;
+    background-color: #3b8051;
+    display: flex;
+
+}
+
+
+.container_photos{
+  position: relative;  
+  flex: 2; /*flex-grow: 2 parties de container*/
+
+
+}
+
+.buttons{
+
+    flex: 1;
+    display: flex;
+    flex-direction:  column; 
+    justify-content: center;
+    align-items: center;
+    color: red;
+
+}
+
+.contentbtn{
+
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.cardbtn{
+    border: 1px solid dimgray;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 4px;
+    text-decoration: none;
+    color: dimgray;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+h5,h4, h2{ 
+    color: white;
+}
+
+h3{
+
+    color: dimgray;
+}
+
+
+.over{
+
+     position: absolute;
+     left: 55%;
+     top: 60%;
+     z-index: 1;
+     width: 15%;
+     height: auto;
+
+}
+
+.under{
+   position: absolute;
+   left: 30%;
+   bottom: 23%;
+   width: 30%;
+   height: auto;
+
+
+
+
+}
+
+
+
+/*deuxieme page avec les biers*/
+
+
+#pageTwo{
+
+    display: none;
+
+}
+
+p{
+    font-weight: 600;
+    color: dimgray;
+}
+
+img { 
+
+    width: 100%;
+
+
+
+}
+article{
+
+    width: 20%;
+    margin: 3%;
+}
+
+.animation{
+
+    transition: 1.3s ;
+
+}
+
+.animation:hover{
+
+    transform: scale(1.05,1.05);            
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.cards {
+
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+
+
+
+}
+
+.card{
+
+    padding: .3em;
+}
+
+
+.description{
+
+    padding: .3em;
+}
+/*footer*/
+
+.footer_row{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.containers_footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+}
+
+.containers_inside{
+   display:  flex;
+   flex-direction: column;
+   align-items: start;
+
+}
+
+
+
+.link_white{
+   text-decoration: none;
+   color: white;
+}
+
+
+footer{
+
+    background-color: #3b8051; 
+
+    margin-top: 2em;
+    padding-bottom: 2em;
+
+        }
+
+.social{
+
+    border-top: 1px solid white;
+    margin-top: 2em;
+
+        }
+
+.container_social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: .3em;
+}
+
+.fa-3x{
+
+    color: white;
+}
+    
+}  
+    
+
+}
+

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="keywords" content="beer, online-shopping, bier, microbrasserie, Montréal">
+  <meta name="description" content="Brasserie">
+  <meta name="author" content="Basystiuk Ianina">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/animation.js"></script>
+  <script src="js/donees.js"></script>
+  <script src="js/Catalogue.js"></script>
+  <script src="js/App.js"></script>
+  <script src="js/Preferes.js"></script>
+
+  
+    
+  <title>TP1</title>
+   
+</head>
+<body>
+    <header>
+       <!--menu secondaire -->
+    
+        <nav class="secondary_menu">
+            
+        <div class="spacing">
+        <a class="link_black" href="#">Se connecter </a>
+    
+        <form>
+           
+            <input type="text" class="inputstyle">
+            <button class="btnstyle" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        </form>
+        <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
+        </div>
+    </nav>
+
+ 
+<!-- FIN menu secondaire-->
+ 
+<!--menu principal-->
+    
+<ul class="nav principalMenu">
+    
+   
+    <a class="logo" href="#"><img src="img/LOGO2.png" class="logomy"></a>
+        
+  
+    <a class="link_black mainMenu pager" href="#">NOUVEAUTÉS</a>
+  
+    <a class="link_black mainMenu pager listNosBiers" href="#">NOS BIERS</a>
+    
+  
+    <a class="link_black mainMenu" href="#">NOTRE EQUIPE</a>
+ 
+  
+    
+</ul><!-- FIN menu prinipal -->
+    
+    
+    
+    </header>
+    <!--premier page-->
+   <!--contenu avec nouveautes-->
+        <div class="photo_box" id="pageOne">
+            
+            <div class="container_photos" id="left">
+                <img class="under" src="img/predmetnaya-syemka-piva-03.jpg">
+                <img class="over" src="img/predmetnaya-syemka-piva-02.jpg">
+            </div>    
+            
+            <div class="buttons" id="right">
+                <h2>NOUVEAUTÉS</h2> 
+                
+                <a href="#" class="contentbtn" role="button" aria-pressed="true">COMMANDER</a>
+            </div>
+            
+        </div>
+   <!-- END contenu avec nouveautes -->
+    <!--FIN premiere page -->
+    
+    <!--deuxieme page-->
+    <div class="centered" id="pageTwo">
+ 
+            <!--TEMPLATE pour liste des cartes-->
+                <template id="cardsList">
+                  <article class="carte card animation"> <!--class carte here check what its purpouse exactly-->
+                      
+                      <h3>{{Nom}}</h3> 
+                     <!-- ADD target="_blank" before href in  a tag, after you finish code -->
+                      <a href="#"><img src="{{Image}}" alt=""></a>
+                      
+                      <section class="description">
+                          <a href="#" class="cardbtn btnDescription" role="button" aria-pressed="true">DESCRIPTION</a>
+                          <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+                      </section>
+                      
+                  </article>
+                </template>
+         <!--FIN TEMPLATE pour liste des cartes-->
+        
+        
+        
+        
+          <!--TEMPLATE pour une seul carte-->
+          <template id="oneCard">
+                  <div class="one"> 
+                      
+                      <div class="imageDetails">
+                      <h3>{{Nom}}</h3> 
+                      
+                      <a  href="#"><img src="{{Image}}" alt="" class ="imageDescription"></a>
+                          
+                      </div>
+                      <div class="cardDescription">
+                          
+                          <p>L'arôme est du pain grillé, le goût est le chocolat malté avec très peu d'amertume. L'arôme est du pain grillé, le goût est le chocolat malté avec très peu d'amertume. L'arôme est du pain grillé, le goût est le chocolat malté avec très peu d'amertume. L'arôme est du pain grillé, le goût est le chocolat malté avec très peu d'amertume. L'arôme est du pain grillé, le goût est le chocolat malté avec très peu d'amertume. L'arôme est du pain grillé, le goût est le chocolat malté avec très peu d'amertume. L'arôme est du pain grillé, le goût est le chocolat malté avec très peu d'amertume. </p>
+
+                          <a href="#" class="cardbtn" role="button" aria-pressed="true">COMMANDER</a>
+
+                          <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+                          
+                      </div>
+                      
+                  </div>
+                </template>
+          <!--FIN TEMPLATE pour une seul carte-->
+                
+              <!-- <main class="catalogue">
+                 His main where cards are listed
+                </main> -->
+    <div class="recherche">
+        <p>Recherche : <input type="text" name="valeur">
+        <div class="rech">
+        <p>Nom de bierre : <input type="radio" name="type" value="Nom"></p>
+        <p>Brasserie :<input type="radio" name="type" value="Brasserie"></p>
+        <p>Type :<input type="radio" name="type" value="Type"></p>
+        </div>
+        <p><button class="actionRecherche cardbtn">Rechercher</button></p>
+    </div> 
+        
+    <section class="cards catalogue">       
+        
+                
+                   
+           <!--Ici on va afficher le liste de bieres, ou bieres tries, ou description-->     
+                 
+              
+                
+              
+
+
+    </section>
+        
+ 
+</div>
+    <!--FIN deuxieme page-->
+  
+    
+    
+<footer>
+   
+      <div class="footer_row">
+       <div class="containers_footer">
+         <div class="containers_inside"> 
+                         <h4>Informations d’entreprise</h4>
+               <a href="#" class="link_white">A propos nous</a>
+               <a href="#" class="link_white">Presse</a>
+               <a href="#" class="link_white">Carrière</a>
+         </div>
+       </div>
+
+       <div class="containers_footer ">
+
+           <div class="containers_inside">
+               <h4>Nos brasseries</h4>
+               <a href="#" class="link_white">Montréal</a>
+               <a href="#" class="link_white">Toronto</a>
+               <a href="#" class="link_white">Vancouver</a>
+           </div>
+
+       </div>
+
+           <div class="containers_footer">
+
+              <a href="#" class="link_black"><h4>Service clientèle</h4></a>
+
+
+           </div>
+
+            <div class="containers_footer">
+
+               <h4>Generer le code pour obtenir le rabais</h4>
+               <buton class="contentbtn">Generer!</buton>
+
+
+           </div>
+       
+       </div>
+
+       <div class="social">
+
+           <div class="container_social">
+               <a href="https://www.pinterest.ca/"><i class="fa fa-pinterest-square fa-3x" aria-hidden="true"></i></a>
+               <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+               <a href="https://www.facebook.com/"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+               <a href="https://www.youtube.com/"><i class="fa fa-youtube-square fa-3x" aria-hidden="true"></i></a>
+           </div>
+
+
+       </div>
+
+       
+
+
+   
+</footer>
+    
+</body>
+    
+<link href="js/animation.js">
+</html>
